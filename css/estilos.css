@@ -90,6 +90,8 @@ h5{
 #results{
   color: #0cc1ed;
   width: 100%;
+  font-size: 3vw;
+
 }
 #container-results{
   width: 40rem;
