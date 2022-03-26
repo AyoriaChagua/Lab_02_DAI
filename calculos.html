@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios 2, 3, 5</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/Lab02_DAI.js"></script>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+              <li><a href="promedio.html">Average </a></li>
+              <li><a href="index.html">Data</a></li>
+              <li><a href="calculos.html">Calculations</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Do some basic calculations!</h2>
+            <img src="img/flecha-hacia-abajo.png" id="flecha-hacia-abajo" alt="">
+            <h3>b) Add the first two numbers and multiply the last two</h3>
+        </div>
+        <section>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-5 col-6 ">
+                        <div class="columns-calc">
+                            <label for="">Enter the first number</label>
+                            <input type="number" class="numbers-first-ej" id="first-number-ej2">
+                            <label for="">Enter the second number</label>
+                            <input type="number" class="numbers-first-ej" id="second-number-ej2">
+                            <button type="button" class="btn" onclick="getValueSum()"><b>Calc1</b></button>
+                            <div class="rpta-ejercicio" id="rpta_suma">
+                                <h4 id="first-results-second-ej"></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-5 col-6">
+                        <div class="columns-calc">
+                            <label for="">Enter the third number</label>
+                            <input type="number" class="numbers-first-ej" id="third-number-ej2">
+                            <label for="">Enter the fourth number</label>
+                            <input type="number" class="numbers-first-ej" id="fourth-number-ej2">
+                            <button type="button" class="btn" onclick="getValueMult()"><b>Calc2</b></button>
+                            <div class="rpta-ejercicio" id="rpta_multiplicacion">
+                                <h4 id="second-results-second-ej"></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="shapedividers_com-3744">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.28 2.17" preserveAspectRatio="none"></svg>
+            </div>
+        </section>
+        <section id="screen_third_ej">
+            <div class="container">
+                <br>
+                <img src="img/flecha-hacia-abajo.png" id="flecha-hacia-abajo" alt="">
+                <h3>c) The operations depend on which number is greater </h3>
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-5 col-5 ">
+                        <div class="columns-calc">
+                            <label for="">First number</label>
+                            <input type="number" class="numbers-first-ej" id="first-number-ej3">
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-2">
+                        <h5 id="comparion-ej-third">?</h5>
+                    </div>
+                    <div class="col-lg-4 col-md-5 col-5">
+                        <div class="columns-calc">
+                            <label for="">Second number</label>
+                            <input type="number" class="numbers-first-ej" id="second-number-ej3">
+                        </div>
+                    </div>
+                </div>
+                <div id="rpts_third_ej">
+                    <div class="row justify-content-center">
+                        <div class="col">
+                            <div class="columns-calc">
+                                <button type="button" class="btn" onclick="getValueComparison()"><b>Calc</b></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-2">
+                            <div class="columns-calc">
+                                <h5 id="first-op-ej-third" >?</h5>
+                                <div class="rpta-ejercicio" >
+                                    <h4 id="first-results-third-ej"></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="columns-calc">
+                                <h5 id="second-op-ej-third">?</h5>
+                                <div class="rpta-ejercicio" >
+                                    <h4 id="second-results-third-ej"></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="shapedividers_com-9402">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.28 2.17" preserveAspectRatio="none"></svg>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <br>
+                <img src="img/flecha-hacia-abajo.png" id="flecha-hacia-abajo" alt="">
+                <h3>e) What is the largest number?</h3>
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col">
+                        <div class="columns-calc">
+                            <div class="row">
+                                <div class="col-6">
+                                    <label for="">First number</label>
+                                    <input type="number" class="numbers-first-ej" id="first-number-ej5">
+                                </div>
+                                <div class="col-6" id="image-if-first-great"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <label for="">Second number</label>
+                                    <input type="number" class="numbers-first-ej" id="second-number-ej5">
+                                </div>
+                                <div class="col-6" id="image-if-second-great">
+                                    
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <label for="">Third number</label>
+                                    <input type="number" class="numbers-first-ej" id="third-number-ej5">
+                                    <div class="columns-calc">
+                                        <button type="button" class="btn" onclick="getValueComparisonEj5()"><b>Calc</b></button>
+                                    </div>
+                                </div>
+                                <div class="col-6" id="image-if-third-great">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="shapedividers_com-3744">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.28 2.17" preserveAspectRatio="none"></svg>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
