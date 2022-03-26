@@ -34,6 +34,7 @@ nav ul li a:hover{
   background-color: #929fb3;
 }
 
+
 h2 {
   font-size: 3rem;
   padding: 2rem;
@@ -82,12 +83,13 @@ h5{
 }
 
 #forms-info{
-  width: 30rem;
+  width: 50vw;
   margin-left: auto;
   margin-right: auto;
 }
 #results{
   color: #0cc1ed;
+  width: 100%;
 }
 #container-results{
   width: 40rem;
